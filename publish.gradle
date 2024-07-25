@@ -1,5 +1,5 @@
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+// apply plugin: 'com.jfrog.bintray'
 
 
 Properties properties = new Properties()
@@ -9,27 +9,27 @@ try {
 
 
 
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+// bintray {
+//     user = properties.getProperty("bintray.user")
+//     key = properties.getProperty("bintray.apikey")
 
-    configurations = ['archives']
+//     configurations = ['archives']
 
-    pkg {
-        repo = 'maven'
-        name = POM_ARTIFACT_ID
-        desc = LIBRARY_DESCRIPTION
-        websiteUrl = SITE_URL
-        vcsUrl = GIT_URL
-        issueTrackerUrl = ISSUE_URL
+//     pkg {
+//         repo = 'maven'
+//         name = POM_ARTIFACT_ID
+//         desc = LIBRARY_DESCRIPTION
+//         websiteUrl = SITE_URL
+//         vcsUrl = GIT_URL
+//         issueTrackerUrl = ISSUE_URL
 
-        licenses = ['Apache-2.0']
-       // labels = ['aar', 'android', 'rxjava']
+//         licenses = ['Apache-2.0']
+//        // labels = ['aar', 'android', 'rxjava']
 
-        publish = true
-        publicDownloadNumbers = true
-    }
-}
+//         publish = true
+//         publicDownloadNumbers = true
+//     }
+// }
 
 install {
     repositories.mavenInstaller {
