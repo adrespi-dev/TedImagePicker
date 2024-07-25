@@ -26,8 +26,6 @@ TedImagePicker is **simple/beautiful/smart** image picker
 
 ### Gradle
 
-[ ![Download](https://api.bintray.com/packages/tkdrnjs0912/maven/tedimagepicker/images/download.svg) ](https://bintray.com/tkdrnjs0912/maven/tedimagepicker/_latestVersion)
-
 ```gradle
 dependencies {
     implementation 'gun0912.ted:tedimagepicker:x.y.z'
